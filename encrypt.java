@@ -3,7 +3,7 @@ import java.util.*;
 public class encrypt {
     final Random random = new Random();
     private final ArrayList<Integer> keys = new ArrayList<>();
-    public encrypt(int key, int xor_amount) {
+    public encrypt(int xor_amount) {
         for (int i = 0; i < xor_amount; i++) {
             keys.add(random.nextInt(1,30));
         }
